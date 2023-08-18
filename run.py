@@ -35,10 +35,7 @@ if __name__ == '__main__':
             assert celsius_to_fahrenheit(float(sys.argv[2])) == float(exp_out)
         
         case 'cylinder_volume_surface':
-            if cylinder_volume_surface(float(sys.argv[2]), float(sys.argv[3])) == float(exp_out):
-                print(0)
-            else:
-                print(1)
+            assert cylinder_volume_surface(float(sys.argv[2]), float(sys.argv[3])) == float(exp_out)
 
 
     
