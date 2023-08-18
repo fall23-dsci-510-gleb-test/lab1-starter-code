@@ -29,13 +29,14 @@ if __name__ == '__main__':
 
     match fn_name:
         case 'circle_area':
-            print(circle_area(float(sys.argv[2])))
+            assert circle_area(float(sys.argv[2])) == float(exp_out)
         
         case 'celsius_to_fahrenheit':
             assert celsius_to_fahrenheit(float(sys.argv[2])) == float(exp_out)
         
         case 'cylinder_volume_surface':
             assert cylinder_volume_surface(float(sys.argv[2]), float(sys.argv[3])) == float(exp_out)
+            
 
 
     
